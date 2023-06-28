@@ -1,0 +1,91 @@
+.tasks {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+
+  .active .MuiPaginationItem-icon {
+    fill: var(--theme-bj-blue);
+  }
+
+  .css-19xm0h7-MuiButtonBase-root-MuiPaginationItem-root.Mui-selected {
+    background-color: var(--theme-bj-blue);
+    color: var(--theme-bj-white);
+  }
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+
+  .field {
+    border: 1px solid;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 5px;
+  }
+  .error {
+    color: var(--theme-bj-orange);
+    margin-bottom: 10px;
+  }
+}
+
+.card-body {
+  display: flex;
+  position: relative;
+  min-height: 250px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.group {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-card {
+  font-size: 14px;
+  border: 1px solid var(--theme-bj-black);
+  outline: none;
+  bottom: 10px;
+}
+
+.btn-card:hover {
+  border: 1px solid var(--theme-bj-blue);
+  background-color: var(--theme-bj-blue);
+  color: var(--theme-bj-white);
+  outline: none;
+}
+
+.btn-card.active {
+  background-color: var(--theme-bj-blue);
+  color: var(--theme-bj-white);
+}
+
+.execution {
+  color: var(--theme-bj-blue);
+}
+
+.edited {
+  color: var(--theme-bj-orange);
+}
+
+.fulfilled {
+  color: var(--theme-bj-green);
+}
+
+.group-sort-task {
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 350px) {
+  .group-sort-task {
+    flex-direction: column;
+  }
+
+  .btn-card {
+    margin-top: 10px;
+  }
+}
