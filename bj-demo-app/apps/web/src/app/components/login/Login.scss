@@ -1,0 +1,67 @@
+.login {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-color: var(--theme-utair-blue);
+  align-items: center;
+  justify-content: center;
+  .section-login {
+    border-radius: 25px;
+  }
+
+  .form-change-password {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .change-password-block {
+    max-width: 500px;
+  }
+
+  .card-change-password {
+    align-items: center;
+  }
+
+  .section-login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .logo-utair-gradient {
+    width: 300px;
+  }
+
+  .group-logo-title {
+    display: flex;
+    padding: 30px;
+    .logo-title {
+      font-weight: 600;
+      color: var(--theme-utair-orange);
+      padding: 0;
+      margin: 0;
+      font-size: 52px;
+    }
+  }
+}
+
+.ReactModal__Content > h5 {
+  color: #fff !important;
+}
+
+@media (max-width: 991px) {
+  .section-login {
+    padding: unset !important;
+  }
+}
+
+@media (max-width: 425px) {
+  .login .group-logo-title {
+    flex-direction: column;
+    .logo-utair-gradient {
+      width: 212px;
+    }
+    .logo-title {
+      font-size: 42px;
+    }
+  }
+}
